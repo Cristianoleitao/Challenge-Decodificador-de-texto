@@ -24,3 +24,19 @@ Requisitos:
 Extras:
 
 Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos.
+
+## Como Usar
+Para utilizar o descodificador de texto, basta seguir os seguintes passos:
+
+1. Acesse a página da aplicação [clicando aqui](https://github.com/Cristianoleitao/Challenge-Decodificador-de-texto).
+2. Insira o texto que deseja criptografar ou descriptografar no campo correspondente.
+3. Selecione a opção de criptografia ou descriptografia.
+4. Clique no botão "Criptografar" ou "Descriptografar", dependendo da opção selecionada.
+5. O resultado da operação será exibido no lado direito da tela.
+6. Se desejar copiar o resultado para a área de transferência, clique no botão "Copiar".
+
+# Tecnologias Utilizadas
+
+* HTML
+* CSS
+* JavaScript

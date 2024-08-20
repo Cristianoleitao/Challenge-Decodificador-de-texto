@@ -1,15 +1,25 @@
 document.getElementById('encryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('texto-inserido').value;
-    const encryptedText = encryptText(inputText);
-    toggleResultDisplay(encryptedText);
-    displayOutput(encryptedText);
+    let inputText = document.getElementById('texto-inserido').value;
+    inputText = validateInput(inputText);
+    if (inputText !== null) {
+        const encryptedText = encryptText(inputText);
+        toggleResultDisplay(encryptedText);
+        displayOutput(encryptedText);
+    } else {
+        alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
+    }
 });
 
 document.getElementById('decryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('texto-inserido').value;
-    const decryptedText = decryptText(inputText);
-    toggleResultDisplay(decryptedText);
-    displayOutput(decryptedText);
+    let inputText = document.getElementById('texto-inserido').value;
+    inputText = validateInput(inputText);
+    if (inputText !== null) {
+        const decryptedText = decryptText(inputText);
+        toggleResultDisplay(decryptedText);
+        displayOutput(decryptedText);
+    } else {
+        alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
+    }
 });
 
 document.getElementById('botao-copiar').addEventListener('click', function() {
@@ -17,6 +27,15 @@ document.getElementById('botao-copiar').addEventListener('click', function() {
     copyToClipboard(outputText);
     alert('Text copied to clipboard!');
 });
+
+function validateInput(text) {
+    const regex = /^[a-z\s]*$/;
+    if (regex.test(text)) {
+        return text;
+    } else {
+        return null;
+    }
+}
 
 function encryptText(text) {
     return text

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <img class="logo" src="./img/mini-logo-alura.png"alt="Logo da Alura">
+            </div>
+        </header>
+
+        <main class="conteudo">
+            <section class="conteudo__texto">
+                <textarea id="texto-inserido" class="conteudo__textarea" placeholder="Digite o seu texto"></textarea>
+                <div class="conteudo__label">
+                    <img src="./img/exclamation-circle-fill.png">
+                    <label> Apenas letras minúsculas e sem acento.</label>
+                </div>
+                <div class="conteudo__botao">
+                    <button id="encryptButton"class="botao encriptar">Criptografar</button>
+                    <button id="decryptButton"class="botao descriptar">Descriptografar</button>
+                </div>
+            </section>
+            <section class="conteudo__resultado">
+                <div class="falso">
+                    <img id="imagem" class="falso__imagem" src="./img/imagem-pessoa.png" alt="imagem de uma pessoa">
+                    <h2 id="campo" class="falso__titulo">Nenhuma mensagem encontrada</h2>
+                    <p class="falso__texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div class="verdadeiro">
+                    <p id="texto-trocar" class="outputText"></p>
+                    <button id="botao-copiar" class="botao copiar" type="button">Copiar </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">Alura Challenge - Oracle Next Education - Cristiano Leitão </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
